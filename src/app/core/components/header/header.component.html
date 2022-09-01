@@ -1,0 +1,18 @@
+<header class="header">
+  <h1 class="header__title">TO DO List</h1>
+  <div class="btn-group">
+    <app-button (click)="showAll()" [buttonText]="'All'"></app-button>
+    <app-button (click)="showActive()" [buttonText]="'Active'" ></app-button>
+    <app-button (click)="showFinish()" [buttonText]="'Finish'" ></app-button>
+  </div>
+
+  <app-select [textSelector]="sortSelect" (textSelect)="sortSelectorUpdate()" ></app-select>
+
+  <div class="header-creation">
+    <h4 class="header-creation__text">Create new Task:</h4>
+    <div class="header-creation-controls">
+      <app-input [textControl]="todoControl"></app-input>
+      <app-button (click)="todoControl.valid ? createTodo() : null" [buttonText]="'Create'"></app-button>
+    </div>
+  </div>
+</header>

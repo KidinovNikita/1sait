@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Delete todo</h1>
+<div mat-dialog-content>
+  Would you like to delete this todo?
+</div>
+<div mat-dialog-actions >
+  <app-button (click)="close()" [buttonText]="'No'" [buttonColor]="'Accent'"></app-button>
+  <app-button (click)="confirm()" [buttonText]="'Ok'" class="btn-group2"></app-button>
+
+
+</div>
+

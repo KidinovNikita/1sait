@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Edit Todo:{{ modalData.title }}</h1>
+<div mat-dialog-content>
+  <app-input [textControl]="formGroup.get('title')"></app-input>
+  <app-date [control]="formGroup.get('deadlineDate')" [label]="'deadline Date'"></app-date>
+</div>
+<div mat-dialog-actions>
+  <app-button (click)="close()" [buttonText]="'Cancel'"></app-button>
+  <app-button (click)="formGroup.valid ? saveChange() : null" [buttonText]="'Save changes'" class="btn-group2"></app-button>
+  <img (click)="close()"  class="cross" src="assets/icons/pngwing.com.png" alt="cross">
+</div>
+

@@ -1,0 +1,11 @@
+<mat-form-field appearance="fill">
+  <mat-label>To Do Cards</mat-label>
+  <mat-select [formControl]="textSelector" (selectionChange)="textSelectorOption()"  disableRipple>
+    <mat-option value="text">Text</mat-option>
+    <mat-option value="date">Date</mat-option>
+    <mat-option value="finish">Finish</mat-option>
+    <mat-option value="not finished">Not Finished</mat-option>
+  </mat-select>
+</mat-form-field>
+
+

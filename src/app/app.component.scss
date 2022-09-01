@@ -1,0 +1,10 @@
+.section{
+  width: 80%;
+  margin: 40px auto;
+  & app-todo-card{
+    margin-bottom: 10px;
+    display: block;
+  }
+
+}
+
